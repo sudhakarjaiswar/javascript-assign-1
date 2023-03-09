@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1 style="color: green;">FIRST LETTER UPPERCASE</h1>
+        <h2>make first letter of string upeercase.</h2>
+        <input id="input"  type="text" name="input">
+        <button onclick= "capitaliseFLetter()"> Click to capitalize</button>
+        <h3 id="div"></h3>
+    </header>
+
+    <!------Bill spiltter------>
+
+    <div class = "container center">
+        <div class = "bill-divider-wrapper">
+          <div class = "title">
+            <h1>Bill Divide</h1>
+          </div>
+  
+          <div class = "bill-inputs">
+            <form id = "bill-divider-form">
+              <div class = "form-group">
+                <label for = "subtotal">subtotal bill (&dollar;/&pound;/&euro;)</label>
+                <input type = "number" id = "subtotal" class = "form-control" min = "0" step = "any" required>
+              </div>
+              
+              <div class = "form-group">
+                <label for = "tip">tip (%)</label>
+                <input type = "number" id = "tip" class = "form-control" min = "0" step = "any" required>
+              </div>
+  
+              <div class = "form-group">
+                <label for = "no-of-person">no of person</label>
+                <input type = "number" id = "no-of-person" class = "form-control" min = "0" step = "1" required>
+              </div>
+  
+              <input type = "submit" id = "calc-btn" value = "calculate">
+            </form>
+          </div>
+  
+          <div class = "bill-output">
+            <div class = "text-group">
+              <h3>Total Bill</h3>
+              <span id = "total-bill">$ 00.00</span>
+            </div>
+  
+            <div class = "text-group">
+              <h3>Bill Per Person</h3>
+              <span id = "bill-per-person">$ 00.00</span>
+            </div>
+  
+            <div class = "text-group">
+              <h3>Total Tip</h3>
+              <span id = "total-tip">$ 00.00</span>
+            </div>
+  
+            <div class = "text-group">
+              <h3>Tip Per Person</h3>
+              <span id = "tip-per-person">$ 00.00</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr>
+
+    <!--------generate random number----------->
+    <label id="xlabel"></label><br>
+    <label id="xlabel"></label><br> 
+    <label id="xlabel"></label><br>
+    <button class="button" id="rollbutton">Roll</button>
+    
+
+    <!-----------change text------------>
+    <div class="text-changer">
+        <h2>The most affordable learning platform</h2>
+        <p id="changeText">PW platform</p>
+        <button class="button" onclick='document.getElementById("changeText").innerHTML = "PW skills is awesome!"''>
+        Magic button </button>
+    </div>
+    <hr>
+    
+
+    <!----------Todo list---------->
+
+    <section class="main-section">
+
+        <section>
+            <h1>Task List 2021</h1>
+            <form id="new-task-form">
+                <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="What do you have planned?" />
+                <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add task" />
+            </form>
+        </section>
+        <main>
+            <section class="task-list">
+                <h2>Tasks</h2>
+    
+                <div id="tasks">
+    
+                    <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="A new task"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+    
+                </div>
+            </section>
+        </main>
+
+    </section>
+    <hr>
+
+    <!------color change--------->
+
+    <button id="button1">Press me to change</button>
+    <hr>
+    <!--------highlight search text--------->
+    <div class="search-section">
+      <div id="searchbox">
+        <input type="text" id="input" placeholder="Search">
+        <input type="button" id="searchBtn" value="Search" onclick="search();">
+      </div>
+      <div id="content">
+        <p id="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur laudantium saepe ipsa doloremque necessitatibus vitae, quasi fugit similique delectus eaque officiis quod aliquam quia? Quis esse beatae, quo consectetur rem optio laborum nisi architecto aspernatur! Totam, amet quasi! Beatae consequatur, hic veritatis blanditiis cum voluptatem aliquid, eaque quod, nemo nisi obcaecati ipsam expedita ipsa voluptate in. Molestiae deleniti at id cum. Impedit est cumque a quas incidunt commodi, iure aperiam fuga asperiores velit soluta suscipit corrupti vero ab! Dolorem quae doloremque ipsum sunt ab, consectetur corporis ipsam mollitia error voluptate ut dolores natus, delectus voluptates recusandae officiis repellendus laboriosam cumque sequi, odit tenetur ratione vel. Ad sunt totam ea eius ex aperiam error accusantium! Incidunt voluptatem deleniti ab voluptates exercitationem ad doloribus magni nisi dicta aut! Maxime cumque, tenetur dolorem ut magnam, dolores explicabo sint magni aut facere atque earum ea quos dolorum accusamus tempora autem porro quaerat doloremque sed totam praesentium. Similique et tempora quam quo eveniet repellendus voluptate? Ad voluptatibus dolore officiis ullam, fuga, sed quod magnam nam ea nisi ducimus voluptas commodi enim fugiat quas. Sit facilis, exercitationem impedit aliquam rem excepturi amet repellat laborum est quia, delectus inventore. Quaerat excepturi vel illo placeat iure itaque eligendi?</p>
+      </div>
+    </div>
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
